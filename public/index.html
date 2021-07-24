@@ -7,6 +7,9 @@
     <title>Originsix</title>
 
     <!--styles-->
+    <link rel="stylesheet" href="assets/fonts/style.css" />
+
+    <!--styles-->
     <link rel="stylesheet" href="styles.css" />
 
     <!-- Fontes-->
@@ -21,7 +24,19 @@
     <header id="header">
       <nav class="container">
         <a class="logo" href="#">beauty<span>salon</span>.</a>
-        <div class="menu">...</div>
+        <!--menu-->
+        <div class="menu">
+          <ul class="grid">
+            <li><a class="title" href="#home">Inicio</a></li>
+            <li><a class="title" href="#about">Sobre</a></li>
+            <li><a class="title" href="#services">Serviços</a></li>
+            <li><a class="title" href="#testimonials">Depoimentos</a></li>
+            <li><a class="title" href="#contact">Contato</a></li>
+          </ul>
+        </div>
+        <!--/menu-->
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
       </nav>
     </header>
 
@@ -35,7 +50,7 @@
             />
           </div>
           <div class="text">
-            <h1>Saude natural para seus cabelos</h1>
+            <h2 class="title">Saude natural para seus cabelos</h2>
             <p>
               Um salão exclusivo em São Paulo, especializado em tratamentos
               naturais.
@@ -47,9 +62,85 @@
 
       <div class="divisor-1"></div>
 
-      <section class="section">
-        <div class="container">outra section</div>
+      <section class="section" id="about">
+        <div class="container grid">
+          <div class="image">
+            <img
+              src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              alt="3 mulheres sorrindo"
+            />
+          </div>
+          <div class="text">
+            <h2 class="title">Sobre nós</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
+              quo doloribus. Facilis repudiandae, ipsum numquam omnis
+              exercitationem unde architecto fuga debitis in? Praesentium dolor
+              quos quae repellendus velit ut ullam?
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+              necessitatibus quam optio est magni esse iusto quas nostrum, non
+              facere, excepturi perspiciatis, fuga ipsa veritatis saepe nemo
+              animi repellat itaque.
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
+              magni quisquam nam ut voluptatem alias vel quam similique voluptas
+              ducimus voluptates non, ipsam doloribus blanditiis sequi cumque?
+              Delectus, ad perferendis?
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="divisor-1"></div>
+      <section class="section" id="contact">
+        <div class="container grid">
+          <header>
+            <h2 class="title">Serviços</h2>
+            <p>
+              Com mais de 10 anos no mercado, o <strong>Beautysalon</strong> já
+              conquiastou clientes de inúmeros países com seus tratamentos
+              exclusivos e totalmete naturais
+            </p>
+          </header>
+          <div class="cards grid">
+            <div class="card">
+              <i class="icon-woman-hair"></i>
+              <h3 class="title">Terapia capilar</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Minima, sequi quibusdam. Autem libero incidunt laudantium eum
+                eaque consequatur explicabo aspernatur asperiores, dolor quas!
+                Odit mollitia culpa eius, tempora magni sequi.
+              </p>
+            </div>
+            <div class="card">
+              <i class="icon-trim"></i>
+              <h3 class="title">Cortes</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, vel
+                explicabo. Quidem, beatae consequatur modi excepturi, cumque
+                corporis doloribus dignissimos quas, sit quibusdam iste. Odit
+                odio tempora natus eum perferendis...
+              </p>
+            </div>
+            <div class="card">
+              <i class="icon-cosmetic"></i>
+              <h3 class="title">Tratamento</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente delectus placeat unde? Cum numquam pariatur ipsam
+                quibusdam sequi beatae odit velit, explicabo, dolores earum,
+                provident obcaecati autem quam adipisci libero?
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
+    <script src="main.js"></script>
   </body>
 </html>
