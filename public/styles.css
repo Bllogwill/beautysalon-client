@@ -32,6 +32,10 @@ img {
   --text-color: hsl(0 0% 46%);
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
+
+  /*FONTS*/
+  --title--font--size: 1.875rem;
+  --subtitle--font--size: 1rem;
 }
 
 /***************************************BASE********************************/
@@ -89,10 +93,13 @@ body {
   gap: 2rem;
 }
 .section {
-  padding: 5rem 0;
+  padding: calc(5rem + var(--header-height)) 0;
 }
 .section .title {
   margin-bottom: 1rem;
+}
+.section .subtitle {
+  font-size: var(--subtitle--font--size);
 }
 .section header {
   margin-bottom: 4rem;
@@ -117,9 +124,6 @@ body {
 }
 #header.scroll {
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
-}
-main {
-  margin-top: calc(var(--header-height) + 2rem);
 }
 
 /***************************************LOGO*****************************/
@@ -354,8 +358,6 @@ nav.show div.icon-close {
   left: -1.875rem;
   color: var(--base-color);
 }
-#testimonials cite {
-}
 #testimonials cite img {
   width: 2rem;
   height: 2rem;
@@ -406,6 +408,9 @@ nav.show div.icon-close {
 footer {
   background: var(--base-color);
 }
+footer.section {
+  padding: 4rem 0;
+}
 footer .logo {
   display: inline-block;
   margin-bottom: 1.5rem;
@@ -454,3 +459,20 @@ footer .social a:hover {
   opacity: 1;
   transform: translateY(0);
 }
+
+/*======MEDIA QUERIES======*/
+/* EXTRA LARGE DEVICES: 1200 > */
+@media (min-width: 1200px) {
+  main {
+    margin-top: var(--header-height);
+  }
+}
+/* LARGE DEVICES: 1032 >*/
+/* LARGE DEVICES: 992 > */
+@media (min-width: 992px) {
+  :root {
+    --title--font--size: 2.25rem;
+    --bubtitle--font--size: 1.125rem;
+  }
+}
+/*MEDIUN DEVICES: 767 > */
