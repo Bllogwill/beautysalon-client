@@ -23,9 +23,9 @@ img {
   --header-height: 4.5rem;
 
   /* colors */
-  --hue: 159;
+  --hue: 3;
   /* HSL color mode */
-  --base-color: hsl(var(--hue) 36% 57%);
+  --base-color: hsl(var(--hue) 35% 57%);
   --base-color-second: hsl(var(--hue) 65% 88%);
   --base-color-alt: hsl(var(--hue) 57% 53%);
   --title-color: hsl(var(--hue) 41% 10%);
@@ -130,6 +130,22 @@ body {
 }
 #header.scroll {
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
+}
+#header .container {
+  position: relative;
+}
+
+#header .container .super-title {
+  position: relative;
+}
+#header .container .super-title::after {
+  content: 'Designer de Unhas';
+  position: absolute;
+  bottom: -11px;
+  right: 0;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: italic;
 }
 
 /***************************************LOGO*****************************/
