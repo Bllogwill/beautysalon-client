@@ -458,6 +458,23 @@ footer .social a {
 footer .social a:hover {
   transform: translateY(-8px);
 }
+.super-footer {
+  position: relative;
+  margin-bottom: 2rem;
+}
+.super-footer .logo {
+  margin-bottom: 0;
+}
+.super-footer::after {
+  content: 'Designer de Unhas';
+  position: absolute;
+  bottom: -11px;
+  right: 0;
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: italic;
+  color: white;
+}
 
 /*=====================BACK-TO-TOP====================================*/
 
